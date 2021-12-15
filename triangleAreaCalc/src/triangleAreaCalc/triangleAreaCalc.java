@@ -21,7 +21,7 @@ public class triangleAreaCalc {
 		System.out.println("                                        ");
 		
 		System.out.println("*********************************************************");
-		System.out.println("                                        ");
+		System.out.println(" ");
 		
 		System.out.println("please input the base of the triangle (in inches)");
 		double base = input.nextDouble();
