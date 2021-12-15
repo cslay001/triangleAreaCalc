@@ -15,20 +15,32 @@ public class triangleAreaCalc {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("let's calculate the area of a triangle!");
+		System.out.println("<press spacebar to continue>");
 		
-		System.out.println("What is the triangle height?");
-		Scanner scannerZero = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
+		System.out.println("                                        ");
 		
-		String triangleHeight = scannerZero.next();
+		System.out.println("**************************************************");
+		System.out.println("                                        ");
 		
-		System.out.println("What is the triangle base?");
-		Scanner scannerOne = new Scanner(System.in);
+		System.out.println("please input the base of the triangle (in inches)");
+		double base = input.nextDouble();
 		
-		String triangleBase = scannerOne.next();
+		while (base <=0) {
+			System.out.println("That's invalid. Please input the base of the triangle (in inches)");
+		}
 		
-		String triangleArea = triangleHeight + " x (1/2 x " + triangleBase + ")";
+		System.out.println("Please input the height of the triangle (in inches)");
+		double height = input.nextDouble();
 		
-		System.out.println("------------------------");
+		while (height <=0) {
+			System.out.println("That's invalid. Please input the height of the triangle (in inches)");
+		}
+		
+		double triangleArea = height * (0.50 * base);
+		
+		System.out.println("**************************************************");
 		System.out.println("the area of this triangle is " + triangleArea);
 		
 
