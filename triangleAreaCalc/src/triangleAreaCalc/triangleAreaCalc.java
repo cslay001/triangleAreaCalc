@@ -38,10 +38,10 @@ public class triangleAreaCalc {
 			System.out.println("That's invalid. Please input the height of the triangle (in inches)");
 		}
 		
-		double triangleArea = height * (0.50 * base);
+		double area = (base * height) / 2;
 		
 		System.out.println("**************************************************");
-		System.out.println("the area of this triangle is " + triangleArea);
+		System.out.println("the area of this triangle is " + area);
 		
 
 	}
